@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rote Herren Jacke - Marcelubas</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="master.css">
+        <link rel="stylesheet" href="itempage.css">
+        <link rel="stylesheet" href="amountcontrol.css">
+        <link rel="stylesheet" href="colorcontrol.css">
+    </head>
+    <body>
+
+        <!-- START OF Navigation Bar -->
+        <section id="navbar">
+            <div class="navbar-entry">
+                <a href="./index.html"><div id="navbar-logo"></div></a>
+            </div>
+            <div class="navbar-entry">
+                <input id="searchbar" type="text" placeholder="Suche...">
+            </div>
+            <div class="navbar-entry">
+                <a href="./cart.html">
+                    <div id="cart">
+                        <div id="cart-logo"></div>
+                        <span id="cart-text">Warenkorb</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- END OF Navigation Bar -->
+
+        <!-- START OF Item Page -->
+        <section id="item-page">
+            <div id="content">
+                <div id="item-picture" class="jacke-red square"></div>
+                
+                <div id="item-control-column">
+                    
+                    <div id="item-control-title">
+                        Arbeitsjacke Herren
+                    </div>
+
+                    <div id="amount-control" class="noselect">
+                        <div id="amount-control-minus" class="amount-control-button"><span>-</span></div>
+                        <div id="amount-control-display">
+                            <span id="amount-control-amount" contenteditable="true">1</span>
+                        </div>
+                        <div id="amount-control-plus" class="amount-control-button"><span>+</span></div>
+                    </div>
+                    
+                    <div id="color-control">
+                        <div id="color-control-red" class="color-control-item square jacke-red jacke"></div>
+                        <div id="color-control-blue" class="color-control-item square jacke jacke-blue"></div>
+                        <div id="color-control-green" class="color-control-item square jacke jacke-green"></div>
+                    </div>
+
+                    <div id="price">
+                        <span>129,99€</span>
+                    </div>
+
+                    <div id="add-to-cart-button" class="noselect">
+                        <span>Zu Warenkorb hinzufügen</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- END OF Item Page -->
+
+        <script src="./amountcontrol.js"></script>
+        <script src="./colorcontrol.js"></script>
+
+    </body>
+</html>

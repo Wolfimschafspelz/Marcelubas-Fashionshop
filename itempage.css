@@ -1,0 +1,87 @@
+#item-page {
+    position: relative;
+    height: auto;
+    width: 100%;   
+}
+
+#content {
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+}
+
+.square {
+    width: 50%;
+}
+  
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+#item-picture {
+    position: relative;
+    left: 0;
+    top: 0;
+    /*background-image: url(./jacke.png);*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    flex-grow: 2;
+}
+
+#item-control-column {
+    position: relative;
+    flex-grow: 1;
+    margin-left: 1vw;
+}
+
+#item-control-title {
+    font-family: sans-serif;
+    font-size: 30pt;
+}
+
+#add-to-cart-button {
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+    width: 100%;
+    background-color: rgb(48, 196, 48);
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#add-to-cart-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#add-to-cart-button > span {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15pt;
+}
+
+#price {
+    position: relative;
+}
+
+#price > span {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    color: rgb(23, 23, 23);
+    font-family: sans-serif;
+    font-size: 25pt;
+}

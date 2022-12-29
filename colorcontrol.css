@@ -1,0 +1,36 @@
+
+#color-control {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.color-control-item {
+    flex-grow: 1;
+}
+
+.jacke-red {
+    background-image: url(./jacke.png);
+}
+
+.jacke-blue {
+    background-image: url(./jacke_blau.png);
+}
+
+.jacke-green {
+    background-image: url(./jacke_gruen.png);
+}
+
+.jacke {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 1vh;
+    transition: 0.1s;
+}
+
+.jacke:hover {
+    transform: scale(1.1);
+}
