@@ -1,0 +1,57 @@
+#navbar {
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-entry {
+    position: relative;
+    flex-grow: 1;
+}
+
+#navbar-logo {
+    height: 100%;
+    width: 100%;
+    background-image: url(./logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#searchbar {
+    position: absolute;
+    top: 50%;
+    height: 3vh;
+    width: calc(100% - 2vw);
+    margin: 0 1vw 0 1vw;
+    padding: 1vw;
+    transform: translateY(-50%);
+    border-radius: 10vh;
+    border: 1px solid gray;
+}
+
+#cart {
+    position: absolute;
+    right: 10vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cart-logo {
+    position: relative;
+    height: 3vh;
+    width: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(./cart.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cart-text {
+    font-size: 8pt;
+    color: black;
+}
