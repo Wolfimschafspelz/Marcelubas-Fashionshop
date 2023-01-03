@@ -9,6 +9,7 @@
 }
 
 .tablebox{
+    background-color: beige;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,11 +61,11 @@ table{
 }
 
 th, td{
-    border: 1px solid black;
     border-collapse: collapse;
     font-style: sans-serif;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
 }
