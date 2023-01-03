@@ -1,4 +1,4 @@
-#infobox{
+.infobox{
     background-color: beige;
     display: flex;
     align-items: center;
@@ -10,4 +10,13 @@
 
 .infofont{
     font-size: 25px;
+}
+
+.btnbox{
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 400px;
 }
