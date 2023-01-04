@@ -1,39 +1,40 @@
-.infobox{
-    background-color: beige;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
-}
-
-.tablebox{
-    background-color: beige;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
+.center{
+    margin: auto;
+    width: 70%;
+    padding: 15px;
 }
 
 .infofont{
-    font-size: 25px;
+    font-size: 20px;
     font-family: sans-serif;
 }
 
-.btnbox{
+#infobox{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+#tablebox{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#btnbox{
     background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #back-to-itempage{
@@ -57,12 +58,12 @@ a {
 }
 
 table{
-
+    
 }
 
 th, td{
     border-collapse: collapse;
-    font-style: sans-serif;
+    font-family: sans-serif;
     align-items: center;
     justify-content: center;
     margin-left: auto;
