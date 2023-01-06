@@ -51,6 +51,10 @@
     padding: 5px;
 }
 
+#quantity{
+    width: 40px;
+}
+
 a {
     color: black;
     font-style: normal;
@@ -58,15 +62,23 @@ a {
 }
 
 table{
-    
+    font-family: sans-serif;
+    border: 3px solid #bbb;
+    border-collapse: collapse;
 }
 
-th, td{
+th{
+    background-color: gray;
+    border: 1px solid;
     border-collapse: collapse;
-    font-family: sans-serif;
+}
+
+td{
+    border: 1px solid;
+    border-collapse: collapse;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 10px;
 }

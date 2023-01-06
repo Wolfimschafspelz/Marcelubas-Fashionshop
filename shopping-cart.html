@@ -6,7 +6,10 @@
         <link rel="stylesheet" href="shop.css">
         <link rel="stylesheet" href="footer.css"> 
     </head>
-    <body>
+
+    <script src="./cart-amount.js"></script>
+
+    <body onload="startPage();">
 
         <!-- START OF Navigation Bar -->
         <section id="navbar">
@@ -28,23 +31,40 @@
         <!-- END OF Navigation Bar -->
 
         <!-- START OF Shopping Cart Page -->
-        <section class="center">
-            <div id="infobox">
+        <section>
+            <!--
+            <div id="infobox" class="center">
                 <p class="infofont">Der Warenkorb ist leer!</p>
             </div>
-            <div id="tablebox">
+            -->
+            <div id="tablebox" class="center">
                 <table>
+                    <caption>Bereits im Warenkorb:</caption>
+                    <thead>
+                        <tr>
+                            <th>Ansicht</th>
+                            <th>Anzahl</th>
+                            <th>Produktbeschreibung</th>
+                            <th>Einzelpreis</th>
+                            <th>Gesamtpreis</th>
+                        </tr>
+                    </thead>
                     <tr>
-                        <th colspan="3">Bereits im Warenkorb:</th>
+                        <td id="red_jacket"><img src="./jacke.png" style="height: 50px;"></td>
+                        <td id="red_amount"><form><input type="number" id="quantity" value="2" min="1" max="5"></form></td>
+                        <td id="red_descr">Modische Herrenjacke in rot. Sowohl als Arbeitskleidung, als auch chic in der Freizeit tragbar.</td>
+                        <td id="red_price">289.99&euro;</td>
+                        <td id="red_sum">289.99&euro;</td>
                     </tr>
-                    <tr>
-                        <td><img src="./jacke.png" style="height: 50px;"></td>
-                        <td>Modische Herrenjacke in rot. Sowohl als Arbeitskleidung, als auch chic in der Freizeit tragbar.</td>
-                        <td>289,99€</td>
-                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Summe im Warenkorb:</td>
+                            <td>289.99&euro;</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
-            <div id="btnbox"> 
+            <div id="btnbox" class="center"> 
                 <a href="./item.html">
                     <div class="infofont" id="back-to-itempage">
                         <img src="./links.png" style="height: 15px;">
@@ -74,6 +94,6 @@
         </footer>
         <!-- END OF Footer -->
 
-        <script src="./cart-amount.js"></script>
+        
 
     </body>
