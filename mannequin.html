@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcelubas Fashionshop</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="footer.css">
 
     <style>
         main {
@@ -95,11 +99,24 @@
 
 
 <body>
-    <header>
-        <h1>
-            Marcelubas Fashionshop
-        </h1>
-    </header>
+    <section id="navbar">
+        <div class="navbar-entry">
+            <a href="./index.html">
+                <div id="navbar-logo"></div>
+            </a>
+        </div>
+        <div class="navbar-entry">
+            <input id="searchbar" type="text" placeholder="Suche...">
+        </div>
+        <div class="navbar-entry">
+            <a href="./cart.html">
+                <div id="cart">
+                    <div id="cart-logo"></div>
+                    <span id="cart-text">Warenkorb</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <main>
         <div class="mannequin-options">
@@ -183,5 +200,15 @@
     </main>
 
 </body>
+
+<footer>
+    <p>&#169 Copyright by Marcelubas Fashion</p>
+    <a href="impressum.html" class="greylink">
+        <p>Impressum</p>
+    </a>
+    <a href="contactform.html" class="greylink">
+        <p>Contact</p>
+    </a>
+</footer>
 
 </html>
