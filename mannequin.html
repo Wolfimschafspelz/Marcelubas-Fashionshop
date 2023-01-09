@@ -77,15 +77,17 @@
         }
 
         function drag(ev) {
-
+            ev.dataTransfer.setData("text", ev.target.id);
         }
 
         function drop(ev) {
-
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
         }
 
         function reset() {
-            
+            //TODO: default values for form
         }
     </script>
 </head>
@@ -157,13 +159,19 @@
             <p>
                 Items can be dragged onto the mannequin to inspect the fit on it
             </p>
+
+            <div class="item" ondragstart="drag(event)" draggable="true" id="drag1">
+                <h4>
+                    example item
+                </h4>
+            </div>
         </div>
 
         <div class="mannequin">
             <img src="assets/mannequin.jpg" alt="Picture of mannequin">
-            <div class="mannequin-head"></div>
-            <div class="mannequin-body"></div>
-            <div class="mannequin-legs"></div>
+            <div class="mannequin-head" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="mannequin-body" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="mannequin-legs" ondrop="drop(evnt)" ondragover="allowDrop(event)"></div>
             <div class="mannequin-actions">
                 <form action="" method="post">
                     <input type="button" value="Add selection to shopping cart">
