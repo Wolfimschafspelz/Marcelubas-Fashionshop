@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcelubas Fashionshop</title>
+
+    <style>
+        main {
+            display: flex;
+        }
+
+        main div {
+            margin: 0 20px;
+        }
+
+        form {
+            align-items: center;
+        }
+
+        .mannequin-options {
+            text-align: center;
+            border-radius: 5px;
+            background-color: #efefef;
+            padding: 20px;
+        }
+
+        .mannequin-options div {
+            margin-bottom: 10px;
+        }
+
+        #earrings {
+            margin-top: 10px;
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+
+
+
+        .measurements {
+            text-align: left;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .measurements div {
+            margin: 5px;
+        }
+
+        .mannequin {
+            text-align: center;
+            border-radius: 5px;
+            background-color: #efefef;
+        }
+
+        input[type=button] {
+            padding: 10px;
+            text-transform: capitalize;
+            border-radius: 5px;
+            background-color: dimgrey;
+            color: white;
+        }
+
+        input[type=button]:hover {
+            background-color: darkgray;
+        }
+    </style>
+
+    <script>
+        function allowDrop(ev) {
+            // TODO: if type of clothing matches areas
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+
+        }
+
+        function drop(ev) {
+
+        }
+
+        function reset() {
+            
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>
+            Marcelubas Fashionshop
+        </h1>
+    </header>
+
+    <main>
+        <div class="mannequin-options">
+            <h3>
+                Appearance
+            </h3>
+
+            <form action="" method="post">
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+
+                <div class="measurements">
+                    <label for="height">Height</label>
+                    <input type="number" name="height" id="height">
+
+                    <label for="belly">Belly size</label>
+                    <input type="number" name="belly" id="belly">
+
+                    <label for="head">Head size</label>
+                    <input type="number" name="head" id="head">
+
+                    <label for="arm">Arm size</label>
+                    <input type="number" name="arm" id="arm">
+
+                    <label for="hand">Hand size</label>
+                    <input type="number" name="hand" id="hand">
+
+                    <label for="leg">Leg size</label>
+                    <input type="number" name="leg" id="leg">
+
+                    <label for="feet">Feet size</label>
+                    <input type="number" name="feet" id="feet">
+
+                    <div>
+                        <input type="checkbox" name="earrings" id="earrings">
+                        <label for="earrings">Ear ring holes</label>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="button" value="reset">
+                    <input type="button" value="apply">
+                </div>
+            </form>
+        </div>
+
+        <div class="item-list">
+            <h3>
+                Container for items
+            </h3>
+
+            <p>
+                Items can be dragged onto the mannequin to inspect the fit on it
+            </p>
+        </div>
+
+        <div class="mannequin">
+            <img src="assets/mannequin.jpg" alt="Picture of mannequin">
+            <div class="mannequin-head"></div>
+            <div class="mannequin-body"></div>
+            <div class="mannequin-legs"></div>
+            <div class="mannequin-actions">
+                <form action="" method="post">
+                    <input type="button" value="Add selection to shopping cart">
+                    <input type="button" value="Add to shopping cart and remove from mannequin">
+                    <input type="button" value="Inspect shopping cart">
+                </form>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
