@@ -1,0 +1,18 @@
+.greylink{
+    color: lightgrey;
+}
+
+#wrapper{
+    position: relative;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: lightgrey;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 3px;
+}

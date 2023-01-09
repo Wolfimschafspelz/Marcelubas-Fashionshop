@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Warenkorb - Marcelubas</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="shop.css">
+        <link rel="stylesheet" href="footer.css"> 
+    </head>
+
+    <script src="./cart-amount.js"></script>
+
+    <body onload="startPage();">
+
+        <!-- START OF Navigation Bar -->
+        <section id="navbar">
+            <div class="navbar-entry">
+                <a href="./index.html"><div id="navbar-logo"></div></a>
+            </div>
+            <div class="navbar-entry">
+                <input id="searchbar" type="text" placeholder="Suche...">
+            </div>
+            <div class="navbar-entry">
+                <a href="./cart.html">
+                    <div id="cart">
+                        <div id="cart-logo"></div>
+                        <span id="cart-text">Warenkorb</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <!-- END OF Navigation Bar -->
+
+        <!-- START OF Shopping Cart Page -->
+        <section>
+            <!--
+            <div id="infobox" class="center">
+                <p class="infofont">Der Warenkorb ist leer!</p>
+            </div>
+            -->
+            <div id="tablebox" class="center">
+                <table>
+                    <caption>Bereits im Warenkorb:</caption>
+                    <thead>
+                        <tr>
+                            <th>Ansicht</th>
+                            <th>Anzahl</th>
+                            <th>Produktbeschreibung</th>
+                            <th>Einzelpreis</th>
+                            <th>Gesamtpreis</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="red_jacket"><img src="./jacke.png" style="height: 50px;"></td>
+                        <td id="red_amount"><form><input type="number" id="quantity" value="2" min="1" max="5"></form></td>
+                        <td id="red_descr">Modische Herrenjacke in rot. Sowohl als Arbeitskleidung, als auch chic in der Freizeit tragbar.</td>
+                        <td id="red_price">289.99&euro;</td>
+                        <td id="red_sum">579.98&euro;</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Summe im Warenkorb:</td>
+                            <td>579.98&euro;</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div id="btnbox" class="center"> 
+                <a href="./item.html">
+                    <div class="infofont" id="back-to-itempage">
+                        <img src="./links.png" style="height: 15px;">
+                        <span>Zurück zur Bestellübersicht</span>
+                    </div>
+                </a>           
+                <a href="./checkout.html">
+                    <div class="infofont" id="proceed-to-checkout">
+                        <span>Zur Kasse gehen</span>
+                        <img src="./rechts.png" style="height: 15px;">
+                    </div>
+                </a>
+            </div>
+
+        </section>
+        <!-- END OF Shopping Cart Page -->
+
+        <!-- START OF Footer -->
+        <footer>
+            <p>&#169 Copyright by Marcelubas Fashion</p>
+            <a href="impressum.html" class="greylink">
+                <p>Impressum</p>
+            </a>
+            <a href="contactform.html" class="greylink">
+                <p>Contact</p>
+            </a>
+        </footer>
+        <!-- END OF Footer -->
+
+        
+
+    </body>
